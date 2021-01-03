@@ -16,11 +16,11 @@ class hexa{
    display() {
       
        
-       imageMode(CENTER);
-       image(this.Image, this.bodyhexa.position.x, this.bodyhexa.position.y, 50, 45);
+      // imageMode(CENTER);
+       //image(this.Image, this.bodyhexa.position.x, this.bodyhexa.position.y, 50, 45);
        
-       //rectMode(CENTER);
-       //rect(this.bodyhexa.position.x, this.bodyhexa.position.y, 50, 50);
+       rectMode(CENTER);
+       rect(this.bodyhexa.position.x, this.bodyhexa.position.y, 50, 50);
        
    }
 

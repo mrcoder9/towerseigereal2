@@ -8,10 +8,17 @@ var rope1;
 var hexa1;
 var support1, support2;
 var ground1;
+var wall1,wall2;
 var box1, box2, box3, box4, box5, box6, box7, box8,
 box9, box10, box11, box12, box13, box14, box15, box16, box17,
 box18, box19, box20, box21, box22, box23, box24, box25,
-box26, box27, box28, box29, box30, box31, box32, box33, box34;
+box26, box27, box28, box29, box30, box31, box32, box33, box34
+box38,box39,box40,box41,box42,box43,box44,box45,box46,box47,box48,
+box49,box50,box51,box52,box53,box54,box55,box56,box57,box58,box59,
+box60,box61,box62,box63,box64,box65,box66,box67,box68,box69,box70,
+box71,box72,box73,box74,box75,box76,box77,box78,box79,box80;
+
+
 
 function preload() {
 
@@ -22,7 +29,7 @@ function preload() {
 
 
 function setup() {
-     createCanvas(700, 600)
+	 createCanvas(1280, 610)
 
 
     engine = Engine.create();
@@ -36,7 +43,13 @@ function setup() {
 	support1= new ground(300, 400, 250, 15);
 
 	support2= new ground(510, 200, 170, 15);
-	ground1= new ground(350, 590, 700, 20);
+	ground1= new ground(640, 590,1280, 20);
+	support3= new ground(1000,500,230,20)
+
+	wall1= new ground(1010,330,200,20);
+	wall2= new ground(1105,300,20,400);
+	wall3= new ground(640,530,300,20);
+	
 
 	box1= new square(300, 390);
 	box2= new square(270, 390);
@@ -75,9 +88,49 @@ function setup() {
 	box35= new square(510, 147);
 	box36= new square(540, 147);
 	box37= new square(510, 117);
+	box38= new square(940,490);
+	box39= new square(970,490);
+	box40= new square(1000,490);
+	box41= new square(1030,490);
+	box42= new square(1060,490);
+	box43= new square(955,445);
+	box44= new square(985,445);
+	box45= new square(1015,445);
+	box46= new square(1045,445);
+	box47= new square(970,415);
+	box48= new square(1000,415);
+	box49= new square(1030,415);
+	box50= new square(985,385);
+    box51= new square(1015,385);
+	box52= new square(1000,355);
+	box53= new square(1010,320);
+	box54= new square(980,320);
+	box55= new square(950,320);
+	box56= new square(1040,320);
+	box57= new square(995,275);
+	box58= new square(965,275);
+	box59= new square(1025,275);
+	box60= new square(980,245);
+	box61= new square(1010,245);
+	box62= new square(995,215);
+	box63= new square(505,295);
+	box64= new square(505,325);
+	box65= new square(505,355);
+	box66= new square(505,385);
+	box67= new square(505,415);
+	box68= new square(505,445);
+	box69= new square(505,475);
+	box70= new square(505,505);
+	box71= new square(775,295);
+	box72= new square(775,325);
+	box73= new square(775,355);
+	box74= new square(775,385);
+	box75= new square(775,415);
+	box76= new square(775,445);
+	box77= new square(775,475);
+    box78= new square(775,505);
+    
 
-
-	
 }
 
 
@@ -88,8 +141,14 @@ function draw() {
 	hexa1.display();
 
 	support1.display();
-    support2.display();
-    ground1.display();
+	support2.display();
+	support3.display();
+	ground1.display();
+	
+	wall1.display();
+	wall2.display();
+	wall3.display();
+	
 
 	box1.display();
 	box2.display();
@@ -128,8 +187,48 @@ function draw() {
 	box35.display();
 	box36.display();
 	box37.display();
-
-
+    box38.display();
+	box39.display();
+	box40.display();
+	box41.display();
+	box42.display();
+	box43.display();
+	box44.display();
+	box45.display();
+	box46.display();
+	box47.display();
+	box48.display();
+	box49.display();
+	box50.display();
+	box51.display();
+	box52.display();
+	box53.display();
+	box54.display();
+	box55.display();
+	box56.display();
+	box57.display();
+	box58.display();
+	box59.display();
+	box60.display();
+	box61.display();
+	box62.display();
+	box63.display();
+	box64.display();
+	box65.display();
+	box66.display();
+	box67.display();
+	box68.display();
+	box69.display();
+	box70.display();
+	box71.display();
+	box72.display();
+	box73.display();
+	box74.display();
+	box75.display();
+	box76.display();
+	box77.display();
+	box78.display();
+	
 
 	rope1.display();
 }
